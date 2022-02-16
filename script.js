@@ -4,7 +4,6 @@ function initTabNav() {
     tabContent[0].classList.add('ativo'); //Deixar o primeiro item ativo sempre para não ficar vazio quando abrir a página
 
     if(tabMenu.length && tabContent.length) {
-        //Aqui foi criado o loop para adicionar a classe quando o valor for selecionado (ele só funciona em uma classe por vez)
         
         function activeTab(index) {
             tabContent.forEach((section) => {
@@ -12,17 +11,13 @@ function initTabNav() {
             });
             tabContent[index].classList.add('ativo');
         }
-        
-        //Faz a mesma coisa que a função acima só que com o evento click - dentro da função anonima estamos acionando a função activeTab
-        
+                
         tabMenu.forEach((itemMenu, index) => {
             itemMenu.addEventListener('click', () => {
                 activeTab(index);
             });
         });
-        
-        //Criamos animação no css e mudamos o cursor para pointer
-        
+               
     }
 }
 
