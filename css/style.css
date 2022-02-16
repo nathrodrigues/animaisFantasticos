@@ -5,8 +5,8 @@
 }
 
 img {
-    display: block; /* Não deixa as imagens na mesma linha*/
-    max-width: 100%; /* imagens ficam automáticamente responsivas*/
+    display: block; 
+    max-width: 100%; 
 }
 
 ul {
@@ -20,11 +20,11 @@ body {
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
-.azul { /* Vai deixar o body azul quando clicar 'a '*/
+.azul { 
     background: teal;
 }
 
-.aumenta  { /* vai deixar os textos com tamanho maior*/
+.aumenta  { 
     font-size: 6rem;
 }
 
@@ -40,8 +40,8 @@ html.textomaior {
 }
 
 .menu ul {
-    display: flex; /* items do menu vão ficar na mesma linha */
-    flex-wrap: wrap; /* Se a tela quebrar os items vão quebrar junto*/
+    display: flex; 
+    flex-wrap: wrap; 
     padding: 10px;
 }
 
@@ -60,8 +60,8 @@ html.textomaior {
 
 .grid-section {
     grid-column: 2/4;
-    width: 100%; /*vai expandir o máximo que conseguir*/
-    box-sizing: border-box; /* Acumula o valor padding - evita grudar a imagem na borda da tela*/
+    width: 100%; 
+    box-sizing: border-box; 
     padding: 10px;
     display: grid;
     grid-template-columns: 90px 300px 1fr;
@@ -257,7 +257,6 @@ html.textomaior {
         transform: translate3d(0, 0, 0);
     }
 }
-/* Lembrar de acionar na classe que eu quero que isso aconteça*/
 
 .js .js-accordion dd {
     display: none;
